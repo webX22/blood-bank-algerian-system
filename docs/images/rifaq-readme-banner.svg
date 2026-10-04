@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="420" viewBox="0 0 1440 420" role="img" aria-labelledby="title description">
+  <title id="title">Rifaq — thoughtful blood donation coordination</title>
+  <desc id="description">A deep forest-green banner with coral and mint orbital rings, introducing the Rifaq coordination platform.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#102f2a"/>
+      <stop offset="0.58" stop-color="#17463d"/>
+      <stop offset="1" stop-color="#1d574b"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#b7d0bf" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#b7d0bf" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1440" height="420" rx="30" fill="url(#background)"/>
+  <circle cx="1120" cy="210" r="260" fill="url(#glow)"/>
+  <g fill="none" stroke="#d9e9dc" stroke-opacity=".24">
+    <circle cx="1110" cy="210" r="172"/>
+    <circle cx="1110" cy="210" r="132"/>
+    <ellipse cx="1110" cy="210" rx="204" ry="92" transform="rotate(-38 1110 210)"/>
+    <ellipse cx="1110" cy="210" rx="103" ry="190" transform="rotate(30 1110 210)"/>
+  </g>
+  <circle cx="1110" cy="210" r="64" fill="#f7f5ef"/>
+  <g stroke="#e36d52" stroke-linecap="round" stroke-width="15">
+    <path d="M1087 187l46 46"/>
+    <path d="M1133 187l-46 46"/>
+  </g>
+  <circle cx="1110" cy="38" r="5" fill="#e36d52"/>
+  <circle cx="1282" cy="210" r="4" fill="#d9e9dc"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="104" y="111" fill="#f0b19e" font-size="15" font-weight="700" letter-spacing="5">ALGERIA · DONATE · CONNECT · CARE</text>
+    <text x="100" y="224" fill="#fffefa" font-family="Georgia, 'Times New Roman', serif" font-size="86" letter-spacing="-3">Rifaq</text>
+    <text x="104" y="272" fill="#d9e9dc" font-size="21">A more considered path from need to care.</text>
+    <text x="104" y="318" fill="#b7d0bf" font-size="14" letter-spacing="1.2">BLOOD DONATION COORDINATION · ARABIC · FRANÇAIS · ENGLISH</text>
+    <text x="104" y="365" fill="#f0b19e" font-size="12" font-weight="700" letter-spacing="1.5">TECHNICAL FOUNDATION ONLY · NOT FOR CLINICAL DECISIONS</text>
+  </g>
+</svg>

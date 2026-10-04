@@ -1,30 +1,36 @@
 <div align="center">
-  <h1 style="color:#1d574b">Rifaq · Blood Donation Coordination</h1>
-  <p><strong>A multilingual technical platform for coordinating blood donation and blood-bank workflows in Algeria.</strong></p>
-  <p><em>Technical foundation only — not a medical device, transfusion service, or authorization for clinical use.</em></p>
+  <img src="docs/images/rifaq-readme-banner.svg" alt="Rifaq — a more considered path from need to care; blood donation coordination in Algeria" width="100%">
+  <br><br>
+  <a href="https://github.com/webX22/blood-bank-algerian-system/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/webX22/blood-bank-algerian-system/ci.yml?style=for-the-badge&label=CI&color=1d574b" alt="CI workflow status"></a>
+  <a href="https://github.com/webX22/blood-bank-algerian-system"><img src="https://img.shields.io/github/stars/webX22/blood-bank-algerian-system?style=for-the-badge&color=1d574b&label=Stars" alt="GitHub stars"></a>
+  <a href="https://github.com/webX22/blood-bank-algerian-system/issues"><img src="https://img.shields.io/github/issues/webX22/blood-bank-algerian-system?style=for-the-badge&color=e36d52&label=Issues" alt="Open GitHub issues"></a>
+  <br><br>
+  <a href="#run-locally-on-windows"><img src="https://img.shields.io/badge/QUICK_START-Run_locally-1d574b?style=for-the-badge" alt="Quick start: run locally"></a>
+  <a href="#screenshots"><img src="https://img.shields.io/badge/EXPLORE-View_screenshots-e36d52?style=for-the-badge" alt="Explore screenshots"></a>
+  <a href="docs/REAL_WORLD_READINESS.md"><img src="https://img.shields.io/badge/READINESS-Important_limitations-6f8277?style=for-the-badge" alt="Read readiness and limitations"></a>
 </div>
-
-<p align="center">
-  <a href="#screenshots">Screenshots</a> ·
-  <a href="#run-locally-on-windows">Run locally</a> ·
-  <a href="#create-staff-and-admin-logins">Staff and admin logins</a> ·
-  <a href="#deploy-to-a-website">Deploy</a> ·
-  <a href="docs/REAL_WORLD_READINESS.md">Readiness and limitations</a>
-</p>
-
-<p align="center">
-  <span style="background:#1d574b;color:white;padding:5px 9px;border-radius:12px">Laravel 13 API</span>
-  <span style="background:#1d574b;color:white;padding:5px 9px;border-radius:12px">Next.js 16</span>
-  <span style="background:#1d574b;color:white;padding:5px 9px;border-radius:12px">Arabic · French · English</span>
-</p>
 
 **Search topics:** Algerian blood donation · blood bank management system · donor coordination · Laravel API · Next.js · Arabic · French · English
 
+> [!IMPORTANT]
+> This is a **technical coordination foundation**, not a medical device or live transfusion service. It is not authorized for clinical use. Read the [real-world readiness and limitations](docs/REAL_WORLD_READINESS.md) before using or deploying it.
+
+## ✦ Explore Rifaq
+
+<p>
+  <a href="#project-at-a-glance">The project</a> &nbsp;·&nbsp;
+  <a href="#screenshots">The experience</a> &nbsp;·&nbsp;
+  <a href="#features-and-how-to-use-them">Workflows</a> &nbsp;·&nbsp;
+  <a href="#technology">Technology</a> &nbsp;·&nbsp;
+  <a href="#run-locally-on-windows">Local setup</a> &nbsp;·&nbsp;
+  <a href="#create-staff-or-admin-test-accounts">Operator access</a> &nbsp;·&nbsp;
+  <a href="#deploy-to-a-website">Deployment</a> &nbsp;·&nbsp;
+  <a href="#troubleshooting">Help</a>
+</p>
+
 ## Project at a glance
 
-Rifaq is a database-backed application foundation that brings donors, people requesting blood, and healthcare teams into one coordination workflow. It provides a multilingual web portal and a Laravel API for donor profiles, blood requests, authorized review, facilities, donation records, red-cell candidate matching, inventory, notifications, and audit events.
-
-**Important:** the application supports technical coordination and screening aids only. Qualified healthcare professionals must independently confirm donor eligibility, blood group, compatibility, inventory suitability, and every clinical decision. Do not use it to make or authorize a transfusion decision.
+Rifaq is a database-backed application foundation bringing donors, people requesting blood, and healthcare teams into one multilingual coordination workflow. An Arabic, French, and English portal connects to a Laravel API for donor profiles, blood requests, authorized review, facilities, donations, red-cell candidate matching, inventory, notifications, and audit events.
 
 ## Screenshots
 
@@ -45,10 +51,12 @@ The images below were captured from the locally running application with referen
 
 | User | Main workflow |
 | --- | --- |
-| **Donor** | Create a donor account, choose a wilaya and known blood group, opt in or out of contact, and set availability. A donor cannot self-verify their identity or medical eligibility. |
-| **Recipient** | Create an account and submit a blood request with component, blood group, urgency, location, and requested units. A request starts pending healthcare review. |
-| **Staff** | Sign in to the operations view, review requests and donor profiles for assigned facilities, record donations, follow their screening status, review matching candidates, and track inventory. |
-| **Administrator** | Sign in to the operations view and use protected administrator API operations for facilities, staff assignments, and audit records. Facility verification and staff assignment do not currently have dedicated forms in the web portal. |
+| Role | Designed workflow |
+| :-- | :-- |
+| 🩸 **Donor** | Create a profile, choose a wilaya and known blood group, opt in to contact, and manage availability. Identity and medical eligibility cannot be self-verified. |
+| 🤍 **Recipient** | Submit a blood request with component, blood group, urgency, location, and requested units. Requests await healthcare review. |
+| ✚ **Staff** | Review requests and donors in assigned facilities, record donations and their screening status, inspect candidate matches, and track inventory. |
+| ◈ **Administrator** | Use protected operations for facilities, staff assignments, and audit records. Facility verification and staff assignment do not yet have dedicated portal forms. |
 
 The browser portal is served from `/` (normally `http://localhost:3000`). Use its **Create account** and **Sign in** controls; there is no separate dashboard URL. Operations panels are shown after a provisioned staff or admin account signs in.
 
