@@ -4,6 +4,11 @@
   <a href="https://github.com/webX22/blood-bank-algerian-system/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/webX22/blood-bank-algerian-system/ci.yml?style=for-the-badge&label=CI&color=1d574b" alt="CI workflow status"></a>
   <a href="https://github.com/webX22/blood-bank-algerian-system"><img src="https://img.shields.io/github/stars/webX22/blood-bank-algerian-system?style=for-the-badge&color=1d574b&label=Stars" alt="GitHub stars"></a>
   <a href="https://github.com/webX22/blood-bank-algerian-system/issues"><img src="https://img.shields.io/github/issues/webX22/blood-bank-algerian-system?style=for-the-badge&color=e36d52&label=Issues" alt="Open GitHub issues"></a>
+  <br>
+  <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/Contributing-Guidelines-1d574b?style=flat-square" alt="Contribution guidelines"></a>
+  <a href="CODE_OF_CONDUCT.md"><img src="https://img.shields.io/badge/Community-Standards-e36d52?style=flat-square" alt="Code of conduct"></a>
+  <a href="SECURITY.md"><img src="https://img.shields.io/badge/Security-Report%20privately-6f8277?style=flat-square" alt="Security policy"></a>
+  <a href="ACCESSIBILITY.md"><img src="https://img.shields.io/badge/Accessibility-Statement-6f8277?style=flat-square" alt="Accessibility statement"></a>
   <br><br>
   <a href="#run-locally-on-windows"><img src="https://img.shields.io/badge/QUICK_START-Run_locally-1d574b?style=for-the-badge" alt="Quick start: run locally"></a>
   <a href="#screenshots"><img src="https://img.shields.io/badge/EXPLORE-View_screenshots-e36d52?style=for-the-badge" alt="Explore screenshots"></a>
@@ -51,8 +56,6 @@ The images below were captured from the locally running application with referen
 
 | User | Main workflow |
 | --- | --- |
-| Role | Designed workflow |
-| :-- | :-- |
 | 🩸 **Donor** | Create a profile, choose a wilaya and known blood group, opt in to contact, and manage availability. Identity and medical eligibility cannot be self-verified. |
 | 🤍 **Recipient** | Submit a blood request with component, blood group, urgency, location, and requested units. Requests await healthcare review. |
 | ✚ **Staff** | Review requests and donors in assigned facilities, record donations and their screening status, inspect candidate matches, and track inventory. |
@@ -73,6 +76,22 @@ The matching implementation is deliberately limited to basic red-cell ABO/Rh can
 | Languages | Arabic (RTL), French, and English |
 
 The repository does not include a Docker deployment definition, a production hosting configuration, or a preloaded privileged account. Notifications are in-app database records; external email/SMS integrations are not implemented.
+
+## Community and contributing
+
+We welcome respectful questions, accessibility feedback, bug reports, and carefully scoped contributions. Use the [bug report](https://github.com/webX22/blood-bank-algerian-system/issues/new?template=bug_report.yml) or [feature request](https://github.com/webX22/blood-bank-algerian-system/issues/new?template=feature_request.yml) form. **Never** include real patient or donor information in an issue, test, screenshot, or pull request.
+
+| Community standard | Project document |
+| :-- | :-- |
+| Project overview and setup | [README](README.md) |
+| Respectful participation and moderation | [Code of Conduct](CODE_OF_CONDUCT.md) |
+| Development workflow and pull requests | [Contributing](CONTRIBUTING.md) |
+| Responsible vulnerability disclosure | [Security Policy](SECURITY.md) |
+| Accessibility goals, known limitations, and feedback | [Accessibility Statement](ACCESSIBILITY.md) |
+| Pull request checklist | [Pull Request Template](.github/PULL_REQUEST_TEMPLATE.md) |
+| Bug and feature intake | [Issue Templates](.github/ISSUE_TEMPLATE/) |
+
+**License:** No software license has been selected for this repository. Public visibility does not grant permission to reuse, modify, distribute, or deploy its contents. A license must be selected by the project owner before the project can be treated as open source.
 
 ## Run locally on Windows
 

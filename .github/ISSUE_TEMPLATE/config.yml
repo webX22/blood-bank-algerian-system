@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability privately
+    url: https://github.com/webX22/blood-bank-algerian-system/security/advisories/new
+    about: Do not post vulnerabilities, exploit details, credentials, or personal data in public issues.
+  - name: Read the real-world readiness and limitations
+    url: https://github.com/webX22/blood-bank-algerian-system/blob/main/docs/REAL_WORLD_READINESS.md
+    about: Clinical, privacy, legal, geographic-data, and deployment prerequisites.

@@ -1,0 +1,53 @@
+name: Feature request
+description: Propose a focused improvement to the technical coordination platform.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This project is not authorized for clinical use. Feature proposals must not imply automated medical decisions or replace qualified healthcare review. Use synthetic examples only.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem should this solve?
+      description: Describe the user need and current limitation.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the change and the intended user experience.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Project area
+      options:
+        - Donor experience
+        - Recipient requests
+        - Healthcare-team operations
+        - Administration
+        - Accessibility
+        - Arabic, French, or English localization
+        - Developer experience or documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and considerations
+      description: Mention trade-offs, affected workflows, data needs, or accessibility considerations.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety and privacy
+      options:
+        - label: This proposal uses no real patient/donor data and does not require exposing credentials or secrets.
+          required: true
+        - label: I understand that clinical or regulatory claims require independent qualified review and authorization.
+          required: true
